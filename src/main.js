@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// 引入axios文件
+import axios from './http'
 
 // 引入全局css样式
 import './assets/css/global.css'
@@ -12,7 +14,12 @@ import './assets/fonts/iconfont.css'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
-Vue.use(ElementUI, {size: 'small'})
+// 挂载axios全局配置
+Vue.prototype.$http = axios
+
+Vue.use(ElementUI, {
+  size: 'small'
+})
 
 Vue.config.productionTip = false
 
