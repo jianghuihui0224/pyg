@@ -25,8 +25,8 @@ export default {
   data() {
     return {
       form: {
-        username: "",
-        password: ""
+        username: "admin",
+        password: "123456"
       },
       //利用element-ui组件中的方式创建验证规则
       rules: {
@@ -74,7 +74,7 @@ export default {
 <style>
 .login_container {
   height: 100%;
-  background: linear-gradient(45deg, #fff, rgb(3, 126, 89));
+  background: linear-gradient(45deg, #fff, rgb(3, 94, 110));
 }
 .login_container .box {
   width: 400px;
@@ -85,7 +85,8 @@ export default {
   top: 50%;
   transform: translate(-50%, -60%);
   background: linear-gradient(45deg, rgb(195, 252, 235), #eee);
-  padding: 0px 20px;
+  padding: 0px 15px;
+  box-sizing: border-box;
 }
 .login_container .box img {
   display: block;
